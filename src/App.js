@@ -42,18 +42,16 @@ export default function App() {
               <Text style={styles.repository}>{repo.title}</Text>
 
               <View style={styles.techsContainer}>
-                <Text style={styles.tech}>
-                  {repo.techs}
-                </Text>
-                <Text style={styles.tech}>
-                  
-                </Text>
+                {repo.techs.map(tech => (
+                  <Text key={tech} style={styles.tech}>
+                    {tech}
+                  </Text>
+                ))}        
               </View>
 
               <View style={styles.likesContainer}>
                 <Text
                   style={styles.likeText}
-                  // Remember to replace "1" below with repository ID: {`repository-likes-${repository.id}`}
                   testID={`repository-likes-${repo.id}`}
                 >
                   {repo.likes} curtidas
@@ -63,7 +61,6 @@ export default function App() {
               <TouchableOpacity
                 style={styles.button}
                 onPress={() => handleLikeRepository(repo.id)}
-                // Remember to replace "1" below with repository ID: {`like-button-${repository.id}`}
                 testID={`like-button-${repo.id}`}
               >
                 <Text style={styles.buttonText}>Curtir</Text>
@@ -79,21 +76,24 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#7159c1",
+    backgroundColor: "#7159c1",    
   },
   repositoryContainer: {
     marginBottom: 15,
     marginHorizontal: 15,
     backgroundColor: "#fff",
     padding: 20,
+    borderRadius: 4
   },
   repository: {
     fontSize: 32,
     fontWeight: "bold",
+    textAlign: 'center'
   },
   techsContainer: {
     flexDirection: "row",
     marginTop: 10,
+    justifyContent: 'center'
   },
   tech: {
     fontSize: 12,
@@ -103,11 +103,13 @@ const styles = StyleSheet.create({
     paddingHorizontal: 10,
     paddingVertical: 5,
     color: "#fff",
+    borderRadius: 4
   },
   likesContainer: {
     marginTop: 15,
     flexDirection: "row",
     justifyContent: "space-between",
+    justifyContent: 'center'
   },
   likeText: {
     fontSize: 14,
@@ -116,6 +118,8 @@ const styles = StyleSheet.create({
   },
   button: {
     marginTop: 10,
+    alignItems: 'center',
+    flexDirection: 'row',
   },
   buttonText: {
     fontSize: 14,
@@ -124,5 +128,9 @@ const styles = StyleSheet.create({
     color: "#fff",
     backgroundColor: "#7159c1",
     padding: 15,
+    borderRadius: 4,
+    flex: 1,
+    alignItems: 'center',
+    textAlign: 'center'    
   },
 });
