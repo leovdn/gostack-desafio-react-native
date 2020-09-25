@@ -4,8 +4,9 @@ Projeto para a prática dos conceitos de React Native utilizando o Backend em No
 
 Tem a função de realizar a chamada da API de repositórios criada no desafio de Node.Js, fazendo a listagem de repositórios com suas respectivas informações além de exercer a função de **Curtir** determinado repositório.
 
-<img width="600" src="src/desafio03-gostack-reactnative.png" />
-<img align="right" width="250"  src="./src/assets/app-demo.gif">
+<img align="right" width="200"  src="./src/assets/app-demo.gif">
+
+<img width="500" src="src/desafio03-gostack-reactnative.png" />
 <br>
 
 
