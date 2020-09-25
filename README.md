@@ -18,7 +18,7 @@ Tem a função de realizar a chamada da API de repositórios criada no desafio d
 
 
 ### BackEnd da Aplicação 
-- [Repositório - Desafio NodeJs]([https://link](https://github.com/leovdn/gostack-desafio-nodejs))
+- [Repositório - Desafio NodeJs](https://github.com/leovdn/gostack-desafio-nodejs)
 
 
 
