@@ -1,5 +1,5 @@
 
-# Desafio React Js - GoStack
+# Desafio React Native - GoStack
 Projeto para a prática dos conceitos de React Native utilizando o Backend em NodeJs criado nos desafios anteriores.
 
 Tem a função de realizar a chamada da API de repositórios criada no desafio de Node.Js, fazendo a listagem de repositórios com suas respectivas informações além de exercer a função de **Curtir** determinado repositório.
